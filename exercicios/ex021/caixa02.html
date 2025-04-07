@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            margin:0px;
+        }
+        header{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: cadetblue;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.466);
+           
+
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+
+        }
+        nav>:hover{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        main{
+            background-color: blueviolet;
+            padding: 10px;
+            margin:10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.459) ;
+
+        
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px
+        }
+        footer>p{
+            margin: 0px;
+        }
+        article{
+            background-color: aquamarine;
+            border-radius: 3px;
+            padding: 5px;
+        }
+        article>aside{
+            background-color: brown;
+        }
+        div#bola{
+            height:100px;
+            width: 100px;
+            margin:10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav> <!--Links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header> <!--cabeçalho-->
+    <main>
+<section id="assuntos">
+
+</section>
+<section id="noticias">
+    <article>
+  </article>
+  <article>
+    <h2>Notícia sobre o Brasil</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo aperiam ex aliquid error quaerat voluptates. Quae magni, eaque dolores corrupti necessitatibus cupiditate natus, provident ipsum voluptatem, blanditiis porro ratione ipsa!</p>
+    <aside> artigo escrito por Jose da silva.</aside>
+  </article>
+</section>
+    </main> <!--Conteúdo principal-->
+    <footer> Desenvolvido por Victória Marques.</footer> <!--Rodapé-->
+    <div id="bola"></div>
+</body>
+</html>

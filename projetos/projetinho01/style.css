@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:Boldense ;
+    src: url(fontes/Boldonse-Regular.ttf);
+}
+:root{
+    --cor01:#654C30; /*Títulos*/
+    --cor02:#90775C; /*Títulos*/
+    --cor03:#3B2712; /*titulo*/
+    --cor04:#BAA997;
+    --cor05:#E5D1BC; /*fundo*/
+    --font01:Boldense, sans-serif;
+}
+*{
+
+    margin:auto;
+    
+}
+body{
+    background-color:var(--cor05);
+}
+header{
+    padding: 0px;
+   background-image: linear-gradient(to bottom, var(--cor04),var(--cor01));
+   min-height: 100px;
+    
+}
+header h1{
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.466);
+    padding:40px;
+}
+nav{
+    background-color: var(--cor01);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.486);
+}
+nav>a{
+    text-decoration:none;
+    color:var(--cor03);
+  
+    font-size:19px;
+    padding: 0px;
+    margin: 10px;
+    
+  
+}
+nav>a:hover{
+    color: #654C30;
+    background-color: var(--cor04);
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    padding:10px;
+    margin:auto;
+    
+}
+h1{
+    font-family: var(--font01);
+    color: var(--cor03);
+}
+h2{
+    font-family:var(--font01);
+    color: white;
+}
+
+p{
+    background-color: var(--cor03);
+}
+
