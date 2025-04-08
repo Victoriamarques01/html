@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:Dancing;
+    src: url(fontes/Dancing.ttf);
+}
+:root{
+    --cor01:#6A0D06;
+    --cor02:#480904;
+    --cor03:#720E07;
+    --cor04:#F21E0F;
+    --cor05:#b88d8aee;
+    --fonte:'Dancing', sans-serif;
+}
+*{
+   
+    margin: 0;
+}
+body{
+    background-color: var(--cor05);
+}
+header{
+     background-image: linear-gradient(to bottom,var(--cor03),var(--cor05));
+}
+header h1{
+    font-family: var(--fonte);
+    padding-top:50px;
+    padding-left: 50px;
+    font-size: 3em;
+    margin:0 px;
+    color: white;
+    min-height: 100px;
+    box-shadow: 3px 1px 3px  rgba(0, 0, 0, 0.397);
+    
+}
+nav {
+    background-color:var(--cor05);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.397);
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    margin: 10px
+}
+nav a:hover{
+    color: white;
+    background-color: var(--cor04);
+}
+main{
+    min-width: 500px;
+    max-width:900px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    text-indent: 15px;
+}
+article a{
+    text-decoration: none;
+    color: var(--cor04);
+    background-color: white;
+}
+article p{
+ text-align: justify;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.2em;
+ background-color:white;
+ padding: 10px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+video{
+    display: block;
+    margin:auto;
+}
+aside{
+    background-color: white;
+}
+aside{
+    text-align: end;
+}
+footer{
+    color: white;
+    background-color: var(--cor01);
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor04);
+}
