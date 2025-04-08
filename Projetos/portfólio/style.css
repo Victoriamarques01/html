@@ -1,33 +1,45 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 :root{
     --cor01: #FD96A9;
-    --cor02: #9CEC5B;
-    --fonte01: ; 
+    --cor02: #1E441E;
+    --fonte01:"Inria Sans", sans-serif; ; 
 }
 div{
     display: inline-block;
     width: 400px;
-    height: 400px;
+    height: 350px;
     background-color: var(--cor01);
-    border: 4px dashed #9CEC5B;
+    border: 4px dashed var(--cor02);
     position: relative;
     margin-left:35%;
     margin-top: 5%;
- border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: var(--fonte01);
+    text-align: justify;
 }
 div img{
 display: block;
 margin:auto;
-padding: 25px;
+padding: 25px 25px 0px 25px;
 }
 div article{
     padding: 25px;
 }
 div nav{
     padding: 10px;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 div a {
-    position:relative;
-    margin-top:40%;
+    text-decoration: none;
+    color: var(--cor02);
+    font-size: 1.2em;
+    padding: 15px;
+
+}
+div a:hover{
+    text-decoration: underline;
+    color: white;
 }
