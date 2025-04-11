@@ -6,41 +6,47 @@
     --cor02: #f9ebc7;
     --fonte01:"Inria Sans", sans-serif; ; 
 }
-div{
+article{
+    position: relative;
+}
+section{
     display: inline-block;
     width: 400px;
     height: 350px;
     background-color: var(--cor01);
     border: 4px dashed var(--cor02);
-    position: relative;
-    margin-left:35%;
-    margin-top: 5%;
+    position: absolute;
+    left: 50%;
+    top:40%;
+   transform: translate(-50%,-50%);
+  
+
     border-radius: 10px 10px 10px 10px;
     font-family: var(--fonte01);
     text-align: justify;
 }
-div img{
+section img{
 display: block;
 margin:auto;
-padding: 25px 25px 0px 25px;
+padding: 0px 25px 0px 25px;
 }
-div article{
+section article{
     padding: 25px;
    color: rgb(29, 27, 27)
 }
-div nav{
+section nav{
     padding: 10px;
     margin-top: 5%;
     margin-left: 10%;
 }
-div a {
+section a {
     text-decoration: none;
     color: var(--cor02);
     font-size: 1.2em;
     padding: 15px;
 
 }
-div a:hover{
+section a:hover{
     text-decoration: underline;
     color: white;
 }
