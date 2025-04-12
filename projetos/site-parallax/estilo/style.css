@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-size: 2em;
+}
+header{
+    background-color: black;
+    color: white;
+}
+nav{
+    background-color: black;
+    color:white;
+}
+nav a, footer a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+nav a:hover, footer a:hover{
+    text-decoration: underline;
+}
+.fundofixo{
+   
+    height: 500px;
+    min-width: 400px;
+    background-image: url(../imagens/fotoeditada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.541);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
