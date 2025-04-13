@@ -1,30 +1,53 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-
+:root{
+    --fonte01:"Passion One", sans-serif;
+    --cor01: #053D38;
+    --cor02: #A3CCAB;
+    --cor03: #F26800;
+}
 *{
     padding: 0px;
     margin: 0px;
 }
 body{
-    font-size: 2em;
+    text-align: justify;
 }
+
 header{
-    background-color: black;
-    color: white;
+    background-color: var(--cor02);
+    color: var(--cor01);
+    font-size: 2em;
+    font-family: var(--fonte01);
+    padding: 10px;
 }
 nav{
-    background-color: black;
-    color:white;
+    background-color:var(--cor02);
+  
 }
 nav a, footer a{
+    font-size: 1.3em;
     color: white;
     text-decoration: none;
     padding: 10px;
 
 }
 nav a:hover, footer a:hover{
+    color: var(--cor03);
     text-decoration: underline;
+}
+div{
+    margin: auto;
+    width: 1000px;
+}
+div > h2{
+    font-family: var(--fonte01);
+    font-size: 1.7em;
+}
+div > p{
+font-size: 1.5em;
 }
 .fundofixo{
    
@@ -36,7 +59,7 @@ nav a:hover, footer a:hover{
     box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.541);
 }
 footer{
-    background-color: black;
+    background-color: var(--cor02);
     color: white;
     text-align: center;
 }
