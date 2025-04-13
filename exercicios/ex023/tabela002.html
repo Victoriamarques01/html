@@ -8,14 +8,30 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative
         }
         td, th{
             border:1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: grey;
             color: white;
+            background-color: light;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
+        tbody> tr:nth-child(2n){
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -37,8 +53,8 @@
     <table>
         <caption> População das unidades federativas </caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th>População</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -82,10 +98,44 @@
                 <td>Santa Catarina</td>
                 <td class="num">8 058 441</td>
             </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 350 483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 145 040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 836 399</td>
+            </tr>
+            <tr>
+                <td>
+                    Rio Grande do Norte
+                </td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 375 646</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td>
                     <strong>0000000</strong>
                 </td>
